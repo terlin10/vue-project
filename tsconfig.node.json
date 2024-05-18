@@ -1,0 +1,22 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "include": [
+    "vite.config.*",
+    "vitest.config.*",
+    "cypress.config.*",
+    "nightwatch.conf.*",
+    "playwright.config.*",
+    "global.d.ts", "src/**/*", "src/**/*.vue", "src/**/__tests__/*", "tests/**/*"
+  ],
+  "compilerOptions": {
+    "lib": ["es5", "es6", "dom"],
+    "composite": true,
+    "baseUrl": ".",
+    "module": "ESNext",
+    "types": ["node", "@testing-library/jest-dom"],
+    "paths": {
+        "@/*": ["./src/*"],
+        "@tests/*": ["./tests/*"]
+    }
+  }
+}
