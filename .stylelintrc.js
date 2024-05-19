@@ -1,7 +1,6 @@
 module.exports = {
     // 引用官方的 stylelint-config-standard 與第三方的 stylelint-config-sass-guidelines 設定檔
     extends: [
-        'stylelint-config-standard', // 官方的 stylelint-config-standard
         'stylelint-config-sass-guidelines', // 第三方的 stylelint-config-sass-guidelines
         'stylelint-config-css-modules'
     ],
